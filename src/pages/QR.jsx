@@ -2,7 +2,7 @@ import React from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 const QRCodeTrap = () => {
-  const redirectUrl = "http://localhost:5173/got-hacked"; // 👈 Subdirectory path
+  const redirectUrl = "https://gamejucc.vercel.app/gothacked"; // 👈 Subdirectory path
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-6">
