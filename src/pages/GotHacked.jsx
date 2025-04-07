@@ -34,7 +34,7 @@ const GotHacked = () => {
   if (showLoader) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-black text-green-400 font-mono text-4xl animate-pulse tracking-widest">
-        Initializing exploit...
+        YOU HAVE BEEN HACKED 👾☠️
       </div>
     );
   }
