@@ -9,7 +9,7 @@ const GotHacked = () => {
   useEffect(() => {
     const loaderTimeout = setTimeout(() => {
       setShowLoader(false);
-    }, 3000); // 3 seconds fake loading
+    }, 3000); 
 
     return () => clearTimeout(loaderTimeout);
   }, []);
@@ -39,16 +39,16 @@ const GotHacked = () => {
     );
   }
 
-  // Main hacked screen
   return (
-    <div
-      className="min-h-screen w-full bg-black flex flex-col items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${HackedBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+      <div
+        className="min-h-screen w-full px-4 sm:px-12 py-12 bg-black flex flex-col items-center justify-center relative overflow-hidden text-center"
+        style={{
+          backgroundImage: `url(${HackedBg})`,
+          backgroundSize: "contain",        
+          backgroundRepeat: "no-repeat",    
+          backgroundPosition: "center",     
+        }}
+      >
       <div className="absolute inset-0 bg-black opacity-70 z-0" />
 
       <h1 className="z-10 text-6xl md:text-8xl font-bold text-red-600 animate-pulse tracking-widest drop-shadow-[0_0_15px_rgba(255,0,0,0.8)]">
